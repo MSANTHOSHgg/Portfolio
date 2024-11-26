@@ -60,7 +60,7 @@ html {
 }
 
 .navbar-Links {
-  width: 500px;
+  width: 700px;
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
@@ -354,10 +354,13 @@ blockquote {
 .Education-container {
   display: none;
 }
-
-#timeline {
-
+.Education-timeline{
+  max-width: 90%;
   display: flex;
+}
+#timeline {
+  display: flex;
+  justify-content: center;
 }
 
 #timeline:hover .tl-item {
@@ -602,23 +605,34 @@ blockquote {
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
   margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
   background-color: #0e051b;
 }
 
 .footer-container {
   padding: 20px;
 }
+.footer-container h1{
+  text-align: center;
+}
 
 .footer-link {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
 }
-
+.footer-link a{
+  text-decoration: none;
+  color: #0000EE;
+}
+.footer-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
 @media screen and (max-width:768px) {
   .navbar {
     flex-direction: row;
@@ -915,11 +929,20 @@ blockquote {
   .website a {
     font-size: 12px;
   }
+  .footer-link a{
+    font-size: 12px;
+  }
   
 }
 
 @media screen and (min-width:600px) {
   .side-navbar {
     display: none;
+  }
+}
+
+@media screen and (max-width:600px){
+  .navbar-Link a{
+    font-size: 12px;
   }
 }
